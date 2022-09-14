@@ -9,7 +9,9 @@ and sends them to a running Graylog instance over HTTP using the
 ### Usage
 `java -jar graylog-task-lynna-nguyen.jar [arguments]`
 
-See also instructions to [run/debug application in Intellij](#Run/Debug-Configuration-for-Running-Application-in-Intellij)
+`graylog-task-lynna-nguyen.jar` can be found at: https://github.com/lynnanguyen/graylog-task/blob/master/out/artifacts/graylog-task-lynna-nguyen.jar
+
+See also instructions to run/debug application in Intellij below
 ### Arguments
 | Name, Shorthand |                       Default                       | Description                                                                             |
 |:---------------:|:---------------------------------------------------:|:----------------------------------------------------------------------------------------|
@@ -20,6 +22,7 @@ See also instructions to [run/debug application in Intellij](#Run/Debug-Configur
 |      `-r`       |                       `false`                       | Flag to generate random GELF messages and send to the Graylog server.                   |
 |      `-n`       | Default = `1` if `-r` is specified and `-n` is not. | Number of random GELF messages to generate and send to the Graylog server, must be > 0. |
 | `--bulk` , `-b` |                       `false`                       | Flag to send GELF message in bulk or individually.                                      |
+
 **NOTE**: If neither the `-f` flag or the `-r` flag is specified, one random message will be generated and sent to the Graylog server.
 
 Example Commands:
